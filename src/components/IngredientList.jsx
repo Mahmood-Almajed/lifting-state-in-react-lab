@@ -1,4 +1,3 @@
-import { availableIngredients } from "../App"
 const IngredientList =(props)=>{
 
 

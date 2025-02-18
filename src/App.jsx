@@ -3,7 +3,7 @@ import IngredientList from './components/IngredientList';
 import BurgerStack from './components/BurgerStack';
 import { useState } from 'react';
 
-export const availableIngredients = [
+ const availableIngredients = [
   { name: 'Kaiser Bun', color: 'saddlebrown' },
   { name: 'Sesame Bun', color: 'sandybrown' },
   { name: 'Gluten Free Bun', color: 'peru' },
@@ -32,8 +32,8 @@ const App = () => {
   const handleRemoveStack =(ingredient)=>{
     const newStackArr=stack.filter((stackIngredients)=>{
 
-      stackIngredients.name !==ingredient.name
-    })
+     return stackIngredients.name !==ingredient.name
+  })
     setStack(newStackArr)
 
   }
